@@ -1,8 +1,8 @@
 <li [ngClass]="{'list-group-item': true,
                 'list-group-item-success': loveIts > 0,
                 'list-group-item-danger': loveIts < 0}">
+  <span class="float-right">{{ createdAt | date: 'short' }}</span>
   <h2>{{ postTitle }}</h2>
-  <p>{{ createdAt | date: 'short' }}</p>
   <p>{{ postContent }}</p>
 
   <button class="btn btn-sm btn-success" (click)="onLove()">Love it</button>
