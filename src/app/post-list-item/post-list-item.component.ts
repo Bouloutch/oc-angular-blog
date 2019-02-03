@@ -19,12 +19,12 @@ export class PostListItemComponent implements OnInit {
   }
 
   onLove() {
-    console.log('I like it');
     this.loveIts++;
+    console.log(this.loveIts);
   }
 
   onDontLove() {
-    console.log('I don\'t like it');
     this.loveIts--;
+    console.log(this.loveIts);
   }
 }
